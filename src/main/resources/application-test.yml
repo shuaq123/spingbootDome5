@@ -1,0 +1,41 @@
+
+# 数据源配置
+spring:
+  datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://${MYSQL_HOST:127.0.0.1}:${MYSQL_PORT:3306}/${MYSQL_DATABASE:massage}?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+      username: root
+      password: Zxcv1234
+#      url: jdbc:mysql://${MYSQL_HOST:139.9.195.169}:${MYSQL_PORT:3306}/${MYSQL_DATABASE:beegodata}?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+#      username: read_temp
+#      password: NYs@VPQ7pvGs
+      maximum-pool-size: 20
+      max-idle-time: 60000
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+    timeout: 8s
+#    lettuce:
+#      pool:
+#        enabled: true
+#        max-wait: 5s
+#        max-active: 8
+#        max-idle: 8
+#        min-idle: 2
+#        time-between-eviction-runs: 30m
+
+# JPA配置
+server:
+  address: "0.0.0.0"
+  port: 8214
+  error:
+    include-message: always
+logging:
+  file:
+    max-maxSize: 10MB
+    max-history: 1
+    name: log/mylog.log

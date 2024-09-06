@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo4.mapper.BgUsersGroupDao">
+  <resultMap id="BaseResultMap" type="com.example.demo4.pojo.po.BgUsersGroup">
+    <id column="group_id" jdbcType="INTEGER" property="groupId" />
+    <result column="group_name" jdbcType="VARCHAR" property="groupName" />
+    <result column="group_leve" jdbcType="INTEGER" property="groupLeve" />
+    <result column="sort" jdbcType="INTEGER" property="sort" />
+    <result column="creation_time" jdbcType="TIMESTAMP" property="creationTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    group_id,group_name, group_leve, sort, UNIX_TIMESTAMP(creation_time)
+  </sql>
+  <select id="select" resultType="com.example.demo4.pojo.jo.BgUsersGroupJo">
+    SELECT
+      group_id,
+      group_name,
+      group_leve,
+      parent_id,
+      sort,
+      UNIX_TIMESTAMP(creation_time) as creation
+    FROM
+      bg_users_group
+  </select>
+</mapper>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo4.mapper.BgFromInfoDao">
+  <resultMap id="BaseResultMap" type="com.example.demo4.pojo.po.BgFromInfo">
+    <id column="form_id" jdbcType="INTEGER" property="formId" />
+    <result column="form_name" jdbcType="VARCHAR" property="formName" />
+    <result column="state" jdbcType="INTEGER" property="state" />
+    <result column="create_id" jdbcType="INTEGER" property="createId" />
+    <result column="creation_time" jdbcType="TIMESTAMP" property="creationTime" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="form_info" jdbcType="OTHER" property="formInfo"
+            typeHandler="com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler"/>
+  </resultMap>
+  <select id="selectVo" resultType="com.example.demo4.pojo.jo.FormList">
+    SELECT
+      form_id,
+      form_name,
+      create_id,
+      IF(state = 1,"采集中","停止采集") AS stateName,
+      bg_from_info.state,
+      (SELECT employee_name FROM employee e WHERE e.employee_id =bg_from_info.create_id) as adminName,
+      DATE_FORMAT(creation_time, '%Y-%m-%d %H:%i:%s') as creation_time,
+      remark
+    FROM
+      bg_from_info
+    WHERE 1=1
+    <if test="search.collection !=null and search.collection !='' ">
+    and bg_from_info.state = #{search.collection}
+    </if>
+    <if test="search.startingTime != null">
+      and bg_from_info.creation_time >= #{search.startingTime}
+    </if>
+    <if test="search.entTime != null">
+      and bg_from_info.creation_time &lt;= #{search.entTime}
+    </if>
+    <if test="search.search != null">
+      and (bg_from_info.form_name LIKE CONCAT('%', #{search.search}, '%')
+      or create_id IN (SELECT employee_id FROM employee WHERE employee_name LIKE CONCAT('%', #{search.search}, '%')))
+    </if>
+    ORDER BY creation_time DESC
+  </select>
+</mapper>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo4.mapper.EmployeeDao">
+  <resultMap id="BaseResultMap" type="com.example.demo4.pojo.po.Employee">
+    <id column="employee_id" jdbcType="INTEGER" property="employeeId" />
+    <result column="employee_name" jdbcType="VARCHAR" property="employeeName" />
+    <result column="employee_phone" jdbcType="VARCHAR" property="employeePhone" />
+    <result column="state" jdbcType="TINYINT" property="state" />
+    <result column="role_permission" jdbcType="INTEGER" property="rolePermission" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    employee_id, employee_name, employee_phone, `state`, role_permission
+  </sql>
+
+  <select id="listPage" resultType="com.example.demo4.pojo.jo.EmployeeInfo">
+    SELECT
+      e.employee_id,
+    DATE_FORMAT(e.creation_time, '%Y-%m-%d %H:%i:%s') as creation_time,
+      e.employee_name,
+      e.employee_phone,
+      r.role_id,
+      r.role_name,
+        e.state
+    FROM
+      employee e
+        LEFT JOIN role r ON e.role_permission = r.role_id
+    WHERE 1=1
+    <if test="name != ''">
+     and e.employee_name LIKE CONCAT('%', #{name}, '%')
+    </if>
+    ORDER BY
+      e.employee_id DESC
+
+  </select>
+
+
+</mapper>

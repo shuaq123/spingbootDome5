@@ -1,0 +1,22 @@
+# 数据源配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://${MYSQL_HOST:154.8.192.103}:${MYSQL_PORT:8809}/${MYSQL_DATABASE:massage}?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    username: root
+    password: 123456
+    maximum-pool-size: 20
+    max-idle-time: 60000
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  redis:
+    host: 154.8.192.103
+    port: 5007
+    password:
+    timeout: 8s
+server:
+  address: "0.0.0.0"
+  port: 8214
+  error:
+    include-message: always

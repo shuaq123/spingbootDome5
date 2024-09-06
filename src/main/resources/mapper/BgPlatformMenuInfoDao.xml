@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo4.mapper.BgPlatformMenuInfoDao">
+  <resultMap id="BaseResultMap" type="com.example.demo4.pojo.po.BgPlatformMenuInfo">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="parent_code" jdbcType="VARCHAR" property="parentCode" />
+    <result column="menu_layer" jdbcType="TINYINT" property="menuLayer" />
+    <result column="menu_code" jdbcType="VARCHAR" property="menuCode" />
+    <result column="menu_text" jdbcType="VARCHAR" property="menuText" />
+    <result column="menu_icon" jdbcType="VARCHAR" property="menuIcon" />
+    <result column="menu_sort" jdbcType="TINYINT" property="menuSort" />
+    <result column="menu_show" jdbcType="TINYINT" property="menuShow" />
+    <result column="visit_url" jdbcType="VARCHAR" property="visitUrl" />
+    <result column="route_path" jdbcType="VARCHAR" property="routePath" />
+    <result column="route_name" jdbcType="VARCHAR" property="routeName" />
+    <result column="add_id" jdbcType="BIGINT" property="addId" />
+    <result column="add_name" jdbcType="VARCHAR" property="addName" />
+    <result column="add_mobile" jdbcType="VARCHAR" property="addMobile" />
+    <result column="add_ip" jdbcType="CHAR" property="addIp" />
+    <result column="add_time" jdbcType="TIMESTAMP" property="addTime" />
+  </resultMap>
+
+</mapper>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo4.mapper.BgUsersDao">
+  <resultMap id="BaseResultMap" type="com.example.demo4.pojo.po.BgUsers">
+    <id column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="employee_id" jdbcType="INTEGER" property="employeeId" />
+    <result column="stuats" jdbcType="INTEGER" property="stuats" />
+    <result column="nick_name" jdbcType="VARCHAR" property="nickName" />
+    <result column="sex" jdbcType="TINYINT" property="sex" />
+    <result column="card" jdbcType="VARCHAR" property="card" />
+    <result column="is_authentication" jdbcType="TINYINT" property="isAuthentication" />
+    <result column="contact" jdbcType="INTEGER" property="contact" />
+    <result column="remarks" jdbcType="VARCHAR" property="remarks" />
+  </resultMap>
+  <select id="selectUserList" resultType="com.example.demo4.pojo.jo.UserInfo">
+    SELECT
+      u.user_id,
+      u.user_name,
+      u.nick_name,
+      u.phone,
+      DATE_FORMAT(u.create_time, '%Y-%m-%d %H:%i:%s') as create_time,
+      u.is_authentication,
+      g.group_id,
+      g.group_name,
+      e.employee_id,
+      e.employee_name
+    FROM
+      bg_users u
+        INNER JOIN bg_users_group g ON u.group_id = g.group_id
+        INNER JOIN employee e ON u.employee_id = e.employee_id
+    WHERE 1=1
+    <if test="searchname.condition !=null and searchname.condition !='' ">
+    and (u.user_name LIKE CONCAT('%', #{searchname.condition}, '%')
+    or u.phone LIKE CONCAT('%', #{searchname.condition}, '%')
+    or u.nick_name LIKE CONCAT('%', #{searchname.condition}, '%'))
+    </if>
+    <if test="searchname.groupId !=null and searchname.groupId !='' ">
+      AND u.group_id in
+      <foreach collection="groupList" item="id" open="(" separator="," close=")">
+        #{id}
+      </foreach>
+    </if>
+    <if test="searchname.adminId !=null">
+      AND u.employee_id = #{searchname.adminId}
+    </if>
+    <if test="searchname.startTime != null">
+      AND create_time &gt;= #{searchname.startTime}
+    </if>
+    <if test="searchname.endTime != null">
+      AND create_time &lt;= #{searchname.endTime}
+    </if>
+    ORDER BY u.user_id  DESC
+  </select>
+
+</mapper>

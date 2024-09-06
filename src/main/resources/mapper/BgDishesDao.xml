@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo4.mapper.BgDishesDao">
+  <resultMap id="BaseResultMap" type="com.example.demo4.pojo.po.BgDishes">
+    <id column="menu_id" jdbcType="INTEGER" property="menuId" />
+    <result column="menu_name" jdbcType="VARCHAR" property="menuName" />
+    <result column="menu_price" jdbcType="INTEGER" property="menuPrice" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="menu_imgs" jdbcType="VARCHAR" property="menuImgs" />
+  </resultMap>
+
+  <select id="selectne" resultType="com.example.demo4.pojo.po.BgDishes">
+    SELECT
+      menu_id,
+      menu_name,
+      menu_price,
+      menu_imgs,
+      remark,
+      menu_step,
+      (SELECT e.employee_name FROM employee e WHERE bg_dishes.admin_id=e.employee_id) as adminName
+    FROM
+      bg_dishes
+    WHERE
+      1 = 1
+      AND deleted_flag = 0
+    ORDER BY
+      menu_id DESC
+  </select>
+</mapper>

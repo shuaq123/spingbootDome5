@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo4.mapper.UsersDao">
+  <resultMap id="BaseResultMap" type="com.example.demo4.pojo.po.Users">
+    <id column="userId" jdbcType="INTEGER" property="userId" />
+    <result column="phoneNumber" jdbcType="VARCHAR" property="phoneNumber" />
+    <result column="lastTionTime" jdbcType="TIMESTAMP" property="lastTionTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    userId, phoneNumber, lastTionTime
+  </sql>
+
+
+</mapper>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo4.mapper.BgBasicQuestionsDao">
+  <resultMap id="BaseResultMap" type="com.example.demo4.pojo.po.BgBasicQuestions">
+    <id column="questions_id" jdbcType="BIGINT" property="questionsId" />
+    <result column="questions_name" jdbcType="VARCHAR" property="questionsName" />
+    <result column="questions_class" jdbcType="BIGINT" property="questionsClass" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="options" jdbcType="VARCHAR" property="options" />
+    <result column="answer" jdbcType="VARCHAR" property="answer" />
+    <result column="analyze" jdbcType="VARCHAR" property="analysis" />
+    <result column="creation_time" jdbcType="TIMESTAMP" property="creationTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    questions_id, questions_name, questions_class, `type`, `options`, answer, `analyze`, 
+    creation_time
+  </sql>
+  <select id="findQuestion" resultType="com.example.demo4.pojo.po.BgBasicQuestions">
+    SELECT
+      questions_id,
+      questions_name,
+      questions_class,
+      IF
+        (
+              bg_basic_questions.type = 1,
+              '单选题',
+              IF
+                (
+                      bg_basic_questions.type = 2,
+                      '多选题',
+                      IF
+                        ( bg_basic_questions.type = 3, '判断题', IF ( bg_basic_questions.type = 4, '填空题', IF ( bg_basic_questions.type = 5, '问答题', '空' )) ))
+        ) AS typeName,
+      creation_time
+    FROM
+      bg_basic_questions
+    WHERE 1=1
+    <if test="info.search !=null">
+      and questions_name LIKE CONCAT('%', #{info.search}, '%')
+    </if>
+    <if test="info.groupID !=null and info.groupID != 0">
+      and questions_class LIKE CONCAT('%', #{info.groupID}, '%')
+    </if>
+    <if test="info.optionelection !=null and info.optionelection !=0">
+      and type LIKE CONCAT('%', #{info.optionelection}, '%')
+    </if>
+    and deleted_flag = 0
+    ORDER BY creation_time DESC
+  </select>
+</mapper>

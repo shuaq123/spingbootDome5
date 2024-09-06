@@ -1,0 +1,49 @@
+spring:
+  profiles:
+    active: pre
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+mybatis-plus:
+  configuration:
+    cache-enabled: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    # 开启驼峰命名转换
+    map-underscore-to-camel-case: true
+    # 配置分页插件
+    plugins:
+      - com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor
+  mapper-locations: classpath*:mapper/*.xml
+  type-aliases-package: com.example.demo4.mapper
+  global-config:
+    db-config:
+      column-underline: true
+    configuration:
+      map-underscore-to-camel-case: true
+  pagehelper:
+    auto-dialect: true
+    reasonable: true
+
+logging:
+  level:
+    com:
+      baomidou:
+        mybatisplus:
+          mapper=debug:
+    com.baomidou.mybatisplus.core.toolkit: DEBUG
+    java.sql.Connection: DEBUG
+
+
+sms:
+  url: "https://smssh1.253.com/msg/v1/send/json"
+  account: "N8058154"
+  password: "ax0zpG6ct"
+  sign: " "
+
+oss:
+  endpoint: ${OSS_HOST:XX}
+  accessKeyId: XXXX
+  accessKeySecret: XXXX
+  bucketName: XXXX
+  payBucketName: XXXX

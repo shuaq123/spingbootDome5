@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo4.mapper.BgUserImpotRecordDao">
+  <resultMap id="BaseResultMap" type="com.example.demo4.pojo.po.BgUserImpotRecord">
+    <id column="record_id" jdbcType="INTEGER" property="recordId" />
+    <result column="succeed_num" jdbcType="INTEGER" property="succeedNum" />
+    <result column="lose_num" jdbcType="INTEGER" property="loseNum" />
+    <result column="impot_time" jdbcType="TIMESTAMP" property="impotTime" />
+  </resultMap>
+
+  <select id="getUserImportRecordPage" resultType="com.example.demo4.pojo.po.BgUserImpotRecord">
+    SELECT
+      record_id,
+      succeed_num,
+      lose_num,
+      impot_time,
+      DATE_FORMAT(impot_time, '%Y-%m-%d %H:%i:%s') as impot_time,
+      present_id,
+      (succeed_num+lose_num) AS tole
+    FROM
+      bg_user_impot_record
+    ORDER BY
+      impot_time DESC
+  </select>
+
+
+</mapper>

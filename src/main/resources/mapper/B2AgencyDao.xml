@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo4.mapper.B2AgencyDao">
+  <resultMap id="BaseResultMap" type="com.example.demo4.pojo.JIU.B2Agency">
+    <id column="AgencyId" jdbcType="INTEGER" property="agencyid" />
+    <result column="Name" jdbcType="VARCHAR" property="name" />
+    <result column="ShortName" jdbcType="VARCHAR" property="shortname" />
+    <result column="Title" jdbcType="VARCHAR" property="title" />
+    <result column="Logo" jdbcType="VARCHAR" property="logo" />
+    <result column="Domain" jdbcType="VARCHAR" property="domain" />
+    <result column="Address" jdbcType="VARCHAR" property="address" />
+    <result column="Tel" jdbcType="VARCHAR" property="tel" />
+    <result column="Linkman" jdbcType="VARCHAR" property="linkman" />
+    <result column="Mobile" jdbcType="VARCHAR" property="mobile" />
+    <result column="QQ" jdbcType="VARCHAR" property="qq" />
+    <result column="Email" jdbcType="VARCHAR" property="email" />
+    <result column="CreateDate" jdbcType="TIMESTAMP" property="createdate" />
+    <result column="EndDate" jdbcType="TIMESTAMP" property="enddate" />
+    <result column="MainProject" jdbcType="VARCHAR" property="mainproject" />
+    <result column="Province" jdbcType="VARCHAR" property="province" />
+    <result column="City" jdbcType="VARCHAR" property="city" />
+    <result column="Area" jdbcType="VARCHAR" property="area" />
+    <result column="Status" jdbcType="INTEGER" property="status" />
+    <result column="AlipayId" jdbcType="VARCHAR" property="alipayid" />
+    <result column="AlipayEmail" jdbcType="VARCHAR" property="alipayemail" />
+    <result column="AlipayKey" jdbcType="VARCHAR" property="alipaykey" />
+    <result column="IcpNumber" jdbcType="VARCHAR" property="icpnumber" />
+    <result column="FooterTel" jdbcType="VARCHAR" property="footertel" />
+    <result column="FooterQQ" jdbcType="VARCHAR" property="footerqq" />
+    <result column="FooterAdr" jdbcType="VARCHAR" property="footeradr" />
+    <result column="FooterEmail" jdbcType="VARCHAR" property="footeremail" />
+    <result column="SiteIntro" jdbcType="VARCHAR" property="siteintro" />
+    <result column="CnzzStatisKey" jdbcType="VARCHAR" property="cnzzstatiskey" />
+    <result column="CnzzStatisIsShow" jdbcType="BOOLEAN" property="cnzzstatisisshow" />
+    <result column="BaiduStatisKey" jdbcType="VARCHAR" property="baidustatiskey" />
+    <result column="BaiduStatisIsShow" jdbcType="BOOLEAN" property="baidustatisisshow" />
+    <result column="WaterMark" jdbcType="VARCHAR" property="watermark" />
+    <result column="AgencyType" jdbcType="INTEGER" property="agencytype" />
+    <result column="LogoLink" jdbcType="VARCHAR" property="logolink" />
+    <result column="LoginImage" jdbcType="VARCHAR" property="loginimage" />
+    <result column="RegisterImage" jdbcType="VARCHAR" property="registerimage" />
+    <result column="SidebarTel" jdbcType="VARCHAR" property="sidebartel" />
+    <result column="SidebarQRCode" jdbcType="VARCHAR" property="sidebarqrcode" />
+    <result column="SidebarQQType" jdbcType="INTEGER" property="sidebarqqtype" />
+    <result column="SidebarQQ" jdbcType="VARCHAR" property="sidebarqq" />
+    <result column="SidebarEmail" jdbcType="VARCHAR" property="sidebaremail" />
+    <result column="IsRemind" jdbcType="INTEGER" property="isremind" />
+    <result column="IsQa" jdbcType="INTEGER" property="isqa" />
+    <result column="WxPayAppId" jdbcType="VARCHAR" property="wxpayappid" />
+    <result column="WxPayMchId" jdbcType="VARCHAR" property="wxpaymchid" />
+    <result column="WxPayKey" jdbcType="VARCHAR" property="wxpaykey" />
+    <result column="WxPaySecret" jdbcType="VARCHAR" property="wxpaysecret" />
+    <result column="AlipayPrivateKey" jdbcType="VARCHAR" property="alipayprivatekey" />
+    <result column="Mdomain" jdbcType="VARCHAR" property="mdomain" />
+    <result column="IsShowAppQrcode" jdbcType="BOOLEAN" property="isshowappqrcode" />
+    <result column="IsAllowRegister" jdbcType="BOOLEAN" property="isallowregister" />
+    <result column="IsDownloadVideo" jdbcType="BOOLEAN" property="isdownloadvideo" />
+    <result column="WeChatOfficialAccounts" jdbcType="VARCHAR" property="wechatofficialaccounts" />
+    <result column="IsShowQuestion" jdbcType="BOOLEAN" property="isshowquestion" />
+    <result column="IsReview" jdbcType="BOOLEAN" property="isreview" />
+    <result column="IsFee" jdbcType="BOOLEAN" property="isfee" />
+    <result column="IsSelfAnswers" jdbcType="BOOLEAN" property="isselfanswers" />
+    <result column="IsCustomization" jdbcType="BOOLEAN" property="iscustomization" />
+    <result column="AliMsgSign" jdbcType="VARCHAR" property="alimsgsign" />
+    <result column="AliMsgTemplate" jdbcType="VARCHAR" property="alimsgtemplate" />
+    <result column="AliMsgAccessKeyId" jdbcType="VARCHAR" property="alimsgaccesskeyid" />
+    <result column="AliMsgAccessSecret" jdbcType="VARCHAR" property="alimsgaccesssecret" />
+    <result column="WaterMarkPosition" jdbcType="INTEGER" property="watermarkposition" />
+    <result column="AppVNo" jdbcType="VARCHAR" property="appvno" />
+    <result column="AppVNoIos" jdbcType="VARCHAR" property="appvnoios" />
+    <result column="IsOpenQuestion" jdbcType="BOOLEAN" property="isopenquestion" />
+    <result column="ParentId" jdbcType="INTEGER" property="parentid" />
+    <result column="IsTrySendCode" jdbcType="BOOLEAN" property="istrysendcode" />
+    <result column="IsShowBar" jdbcType="BOOLEAN" property="isshowbar" />
+    <result column="TitleIcon" jdbcType="VARCHAR" property="titleicon" />
+    <result column="IsAllowTrail" jdbcType="BOOLEAN" property="isallowtrail" />
+    <result column="IsShowAnswer" jdbcType="BOOLEAN" property="isshowanswer" />
+    <result column="App" jdbcType="VARCHAR" property="app" />
+    <result column="AppCustom" jdbcType="INTEGER" property="appcustom" />
+    <result column="AdminName" jdbcType="VARCHAR" property="adminname" />
+    <result column="IsImportLiveData" jdbcType="BOOLEAN" property="isimportlivedata" />
+    <result column="HiddenPolicy" jdbcType="VARCHAR" property="hiddenpolicy" />
+    <result column="IsShowProductValid" jdbcType="INTEGER" property="isshowproductvalid" />
+    <result column="managementArea" jdbcType="VARCHAR" property="managementarea" />
+    <result column="UpdateMode" jdbcType="INTEGER" property="updatemode" />
+    <result column="DownPaymentRatio" jdbcType="INTEGER" property="downpaymentratio" />
+    <result column="CoffeeCode" jdbcType="VARCHAR" property="coffeecode" />
+    <result column="CoffeeToken" jdbcType="VARCHAR" property="coffeetoken" />
+    <result column="CoffeeSign" jdbcType="VARCHAR" property="coffeesign" />
+    <result column="CoffeeAgentId" jdbcType="VARCHAR" property="coffeeagentid" />
+    <result column="CollectionQRcode" jdbcType="VARCHAR" property="collectionqrcode" />
+    <result column="PayType" jdbcType="INTEGER" property="paytype" />
+    <result column="PayTel" jdbcType="VARCHAR" property="paytel" />
+    <result column="AliCollectionQRcode" jdbcType="VARCHAR" property="alicollectionqrcode" />
+    <result column="IsTry" jdbcType="INTEGER" property="istry" />
+    <result column="NetworkRecord" jdbcType="VARCHAR" property="networkrecord" />
+    <result column="Certificate" jdbcType="VARCHAR" property="certificate" />
+    <result column="CompanyName" jdbcType="VARCHAR" property="companyname" />
+    <result column="IsShowName" jdbcType="INTEGER" property="isshowname" />
+    <result column="WeixinVerifyTxt" jdbcType="VARCHAR" property="weixinverifytxt" />
+    <result column="Region" jdbcType="VARCHAR" property="region" />
+    <result column="YsUpdateTime" jdbcType="VARCHAR" property="ysupdatetime" />
+    <result column="PrivacyProtocolName" jdbcType="VARCHAR" property="privacyprotocolname" />
+    <result column="RateViewPPt" jdbcType="INTEGER" property="rateviewppt" />
+    <result column="ProgramAppid" jdbcType="VARCHAR" property="programappid" />
+    <result column="ProgramAppSecret" jdbcType="VARCHAR" property="programappsecret" />
+    <result column="UploadLimit" jdbcType="INTEGER" property="uploadlimit" />
+    <result column="barPosition" jdbcType="INTEGER" property="barposition" />
+    <result column="iosUpdateMode" jdbcType="INTEGER" property="iosupdatemode" />
+    <result column="IsBuy" jdbcType="TINYINT" property="isbuy" />
+    <result column="AdminId" jdbcType="VARCHAR" property="adminid" />
+    <result column="logoFB" jdbcType="VARCHAR" property="logofb" />
+    <result column="isFloating" jdbcType="INTEGER" property="isfloating" />
+    <result column="isPcShowBar" jdbcType="BOOLEAN" property="ispcshowbar" />
+    <result column="regionalManager" jdbcType="VARCHAR" property="regionalmanager" />
+    <result column="tryAndSee" jdbcType="INTEGER" property="tryandsee" />
+    <result column="seoKeywords" jdbcType="VARCHAR" property="seokeywords" />
+    <result column="DomainRecordId" jdbcType="VARCHAR" property="domainrecordid" />
+    <result column="MDomainRecordId" jdbcType="VARCHAR" property="mdomainrecordid" />
+    <result column="joinMySelfLive" jdbcType="INTEGER" property="joinmyselflive" />
+    <result column="ifShowMarketPrice" jdbcType="BOOLEAN" property="ifshowmarketprice" />
+    <result column="IsApiRegister" jdbcType="INTEGER" property="isapiregister" />
+    <result column="isShowVid" jdbcType="INTEGER" property="isshowvid" />
+    <result column="DomainHttp" jdbcType="VARCHAR" property="domainhttp" />
+    <result column="userAgreement" jdbcType="VARCHAR" property="useragreement" />
+    <result column="Report" jdbcType="VARCHAR" property="report" />
+    <result column="UpgradeStatus" jdbcType="BOOLEAN" property="upgradestatus" />
+    <result column="CustomerType" jdbcType="VARCHAR" property="customertype" />
+    <result column="gbUsername" jdbcType="VARCHAR" property="gbusername" />
+    <result column="gbPassword" jdbcType="VARCHAR" property="gbpassword" />
+    <result column="areaManager" jdbcType="VARCHAR" property="areamanager" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    AgencyId, `Name`, ShortName, Title, Logo, `Domain`, Address, Tel, Linkman, Mobile, 
+    QQ, Email, CreateDate, EndDate, MainProject, Province, City, Area, `Status`, AlipayId, 
+    AlipayEmail, AlipayKey, IcpNumber, FooterTel, FooterQQ, FooterAdr, FooterEmail, SiteIntro, 
+    CnzzStatisKey, CnzzStatisIsShow, BaiduStatisKey, BaiduStatisIsShow, WaterMark, AgencyType, 
+    LogoLink, LoginImage, RegisterImage, SidebarTel, SidebarQRCode, SidebarQQType, SidebarQQ, 
+    SidebarEmail, IsRemind, IsQa, WxPayAppId, WxPayMchId, WxPayKey, WxPaySecret, AlipayPrivateKey, 
+    Mdomain, IsShowAppQrcode, IsAllowRegister, IsDownloadVideo, WeChatOfficialAccounts, 
+    IsShowQuestion, IsReview, IsFee, IsSelfAnswers, IsCustomization, AliMsgSign, AliMsgTemplate, 
+    AliMsgAccessKeyId, AliMsgAccessSecret, WaterMarkPosition, AppVNo, AppVNoIos, IsOpenQuestion, 
+    ParentId, IsTrySendCode, IsShowBar, TitleIcon, IsAllowTrail, IsShowAnswer, App, AppCustom, 
+    AdminName, IsImportLiveData, HiddenPolicy, IsShowProductValid, managementArea, UpdateMode, 
+    DownPaymentRatio, CoffeeCode, CoffeeToken, CoffeeSign, CoffeeAgentId, CollectionQRcode, 
+    PayType, PayTel, AliCollectionQRcode, IsTry, NetworkRecord, Certificate, CompanyName, 
+    IsShowName, WeixinVerifyTxt, Region, YsUpdateTime, PrivacyProtocolName, RateViewPPt, 
+    ProgramAppid, ProgramAppSecret, UploadLimit, barPosition, iosUpdateMode, IsBuy, AdminId, 
+    logoFB, isFloating, isPcShowBar, regionalManager, tryAndSee, seoKeywords, DomainRecordId, 
+    MDomainRecordId, joinMySelfLive, ifShowMarketPrice, IsApiRegister, isShowVid, DomainHttp, 
+    userAgreement, Report, UpgradeStatus, CustomerType, gbUsername, gbPassword, areaManager
+  </sql>
+
+
+</mapper>

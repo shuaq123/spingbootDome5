@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo4.mapper.BgExerciseStoreDao">
+  <resultMap id="BaseResultMap" type="com.example.demo4.pojo.po.BgExerciseStore">
+    <id column="ExerID" jdbcType="INTEGER" property="exerid" />
+    <result column="Title" jdbcType="VARCHAR" property="title" />
+    <result column="CourseID" jdbcType="VARCHAR" property="courseid" />
+    <result column="CatID" jdbcType="INTEGER" property="catid" />
+    <result column="OptNum" jdbcType="INTEGER" property="optnum" />
+    <result column="A" jdbcType="VARCHAR" property="a" />
+    <result column="B" jdbcType="VARCHAR" property="b" />
+    <result column="C" jdbcType="VARCHAR" property="c" />
+    <result column="D" jdbcType="VARCHAR" property="d" />
+    <result column="E" jdbcType="VARCHAR" property="e" />
+    <result column="F" jdbcType="VARCHAR" property="f" />
+    <result column="G" jdbcType="VARCHAR" property="g" />
+    <result column="H" jdbcType="VARCHAR" property="h" />
+    <result column="RightKey" jdbcType="VARCHAR" property="rightkey" />
+    <result column="KeyType" jdbcType="VARCHAR" property="keytype" />
+    <result column="Analyze" jdbcType="VARCHAR" property="analyze" />
+    <result column="MatRef" jdbcType="VARCHAR" property="matref" />
+    <result column="DiffCoeff" jdbcType="INTEGER" property="diffcoeff" />
+    <result column="FreqCoeff" jdbcType="INTEGER" property="freqcoeff" />
+    <result column="ExerType" jdbcType="VARCHAR" property="exertype" />
+    <result column="Source" jdbcType="VARCHAR" property="source" />
+    <result column="IsValid" jdbcType="BOOLEAN" property="isvalid" />
+    <result column="IsMultiExer" jdbcType="BOOLEAN" property="ismultiexer" />
+    <result column="MultiExerID" jdbcType="INTEGER" property="multiexerid" />
+    <result column="IsHtmlTag" jdbcType="BOOLEAN" property="ishtmltag" />
+    <result column="PracTimesAmount" jdbcType="INTEGER" property="practimesamount" />
+    <result column="CorrectTimesAmount" jdbcType="INTEGER" property="correcttimesamount" />
+    <result column="AccuracyAmount" jdbcType="DECIMAL" property="accuracyamount" />
+    <result column="ReviewExerGroupID" jdbcType="INTEGER" property="reviewexergroupid" />
+    <result column="ExerGroupId" jdbcType="INTEGER" property="exergroupid" />
+    <result column="SubTitle" jdbcType="VARCHAR" property="subtitle" />
+    <result column="Econtent" jdbcType="VARCHAR" property="econtent" />
+    <result column="Jcontent" jdbcType="VARCHAR" property="jcontent" />
+    <result column="AgencyId" jdbcType="INTEGER" property="agencyid" />
+    <result column="IsAudit" jdbcType="BOOLEAN" property="isaudit" />
+    <result column="AdminId" jdbcType="INTEGER" property="adminid" />
+    <result column="AuditId" jdbcType="INTEGER" property="auditid" />
+    <result column="AuditTime" jdbcType="TIMESTAMP" property="audittime" />
+    <result column="CreateTime" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="SourceExerId" jdbcType="INTEGER" property="sourceexerid" />
+    <result column="score_rules" jdbcType="BOOLEAN" property="scoreRules" />
+    <result column="score_less" jdbcType="DECIMAL" property="scoreLess" />
+    <result column="new_key_type" jdbcType="TINYINT" property="newKeyType" />
+    <result column="is_unordered_mate" jdbcType="BOOLEAN" property="isUnorderedMate" />
+    <result column="is_material" jdbcType="INTEGER" property="isMaterial" />
+    <result column="old_cat_id" jdbcType="INTEGER" property="oldCatId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    ExerID, Title, CourseID, CatID, OptNum, `A`, B, `C`, D, E, F, `G`, H, RightKey, KeyType, 
+    `Analyze`, MatRef, DiffCoeff, FreqCoeff, ExerType, `Source`, IsValid, IsMultiExer, 
+    MultiExerID, IsHtmlTag, PracTimesAmount, CorrectTimesAmount, AccuracyAmount, ReviewExerGroupID, 
+    ExerGroupId, SubTitle, Econtent, Jcontent, AgencyId, IsAudit, AdminId, AuditId, AuditTime, 
+    CreateTime, SourceExerId, score_rules, score_less, new_key_type, is_unordered_mate, 
+    is_material, old_cat_id
+  </sql>
+  <select id="ExerciseStoreList" resultType="com.example.demo4.pojo.po.BgExerciseStore">
+<!--    SELECT-->
+<!--    <include refid="Base_Column_List"/>-->
+<!--    FROM-->
+<!--    bg_exercise_store-->
+<!--    WHERE-->
+<!--    Title LIKE "%数学%"-->
+<!--    ORDER BY-->
+<!--    CreateTime-->
+<!--    LIMIT 100-->
+
+    SELECT
+    <include refid="Base_Column_List"/>
+    FROM
+    bg_exercise_store
+    WHERE
+    ExerID = 1969153
+    ORDER BY
+    CreateTime
+    LIMIT 1
+  </select>
+</mapper>

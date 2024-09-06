@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo4.mapper.BgQuestionsGroupDao">
+  <resultMap id="BaseResultMap" type="com.example.demo4.pojo.po.BgQuestionsGroup">
+    <id column="group_id" jdbcType="BIGINT" property="groupId" />
+    <result column="group_name" jdbcType="VARCHAR" property="groupName" />
+    <result column="leve" jdbcType="INTEGER" property="leve" />
+    <result column="prent_id" jdbcType="INTEGER" property="prentId" />
+    <result column="creation_time" jdbcType="TIMESTAMP" property="creationTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    group_id, group_name, leve, prent_id, creation_time
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from bg_questions_group
+    where group_id = #{groupId,jdbcType=BIGINT}
+  </select>
+
+</mapper>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo4.mapper.RoleDao">
+  <resultMap id="BaseResultMap" type="com.example.demo4.pojo.po.Role">
+    <id column="role_id" jdbcType="INTEGER" property="roleId" />
+    <result column="role_name" jdbcType="VARCHAR" property="roleName" />
+    <result column="role_ description" jdbcType="VARCHAR" property="roleDescription" />
+    <result column="administrative_authority" jdbcType="TINYINT" property="administrativeAuthority" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    role_id, role_name, `role_ description`, administrative_authority
+  </sql>
+
+</mapper>
