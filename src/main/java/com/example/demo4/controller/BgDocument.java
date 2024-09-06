@@ -25,7 +25,7 @@ public class BgDocument {
     @GetMapping("/get")
 
     public void get() throws IOException {
-        System.out.println(123);
+        System.out.println(123345);
     }
 
 }
