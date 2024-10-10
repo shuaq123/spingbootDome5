@@ -1,5 +1,5 @@
 # 使用基础镜像作为构建起点
-FROM ubuntu:latest
+FROM ubuntu:18.04
 # 设置基础镜像
 #FROM registry.cn-hangzhou.aliyuncs.com/library/adoptopenjdk:17-jdk-hotspot
 # 将本地的 JDK 复制到镜像中
