@@ -1,20 +1,16 @@
-2024-10-12 01:55:54.615  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51m2s845ms).
-2024-10-12 03:14:58.734  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h19m4s120ms).
-2024-10-12 04:33:41.902  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h18m43s170ms).
-2024-10-12 05:57:35.969  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h23m54s67ms).
-2024-10-12 07:22:41.788  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h25m5s819ms).
-2024-10-12 08:26:55.007  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h4m13s219ms).
-2024-10-12 08:44:33.047  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m38s41ms).
-2024-10-12 09:01:37.116  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m4s68ms).
-2024-10-12 09:41:57.260  INFO 77052 --- [http-nio-0.0.0.0-8214-exec-8] c.e.demo4.controller.BgFormManagement    : This is an info log
-2024-10-12 09:41:57.261 ERROR 77052 --- [http-nio-0.0.0.0-8214-exec-8] c.e.demo4.controller.BgFormManagement    : This is an error log
-2024-10-12 13:53:21.977  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h8m11s519ms).
-2024-10-12 14:47:31.508  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54m9s532ms).
-2024-10-12 15:39:49.694  INFO 77052 --- [http-nio-0.0.0.0-8214-exec-6] c.e.demo4.controller.BgFormManagement    : This is an info log
-2024-10-12 15:39:49.697 ERROR 77052 --- [http-nio-0.0.0.0-8214-exec-6] c.e.demo4.controller.BgFormManagement    : This is an error log
-2024-10-12 15:55:49.770  INFO 77052 --- [http-nio-0.0.0.0-8214-exec-9] c.e.demo4.controller.BgFormManagement    : This is an info log
-2024-10-12 15:55:49.771 ERROR 77052 --- [http-nio-0.0.0.0-8214-exec-9] c.e.demo4.controller.BgFormManagement    : This is an error log
-2024-10-12 15:55:55.565  INFO 77052 --- [http-nio-0.0.0.0-8214-exec-2] c.e.demo4.controller.BgFormManagement    : This is an info log
-2024-10-12 15:55:55.565 ERROR 77052 --- [http-nio-0.0.0.0-8214-exec-2] c.e.demo4.controller.BgFormManagement    : This is an error log
-2024-10-12 15:56:03.164  INFO 77052 --- [http-nio-0.0.0.0-8214-exec-5] c.e.demo4.controller.BgFormManagement    : This is an info log
-2024-10-12 15:56:03.165 ERROR 77052 --- [http-nio-0.0.0.0-8214-exec-5] c.e.demo4.controller.BgFormManagement    : This is an error log
+2024-10-15 01:15:55.356  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h21m27s212ms).
+2024-10-15 02:40:15.076  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h24m19s720ms).
+2024-10-15 04:01:42.409  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h21m27s333ms).
+2024-10-15 05:26:04.541  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h24m22s133ms).
+2024-10-15 06:32:02.836  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h5m58s295ms).
+2024-10-15 07:50:37.993  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h18m35s156ms).
+2024-10-15 09:15:08.957  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h24m30s964ms).
+2024-10-15 10:36:22.920  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h21m13s964ms).
+2024-10-15 12:01:21.997  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h24m59s75ms).
+2024-10-15 12:59:43.434  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58m21s438ms).
+2024-10-15 13:16:59.082  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m15s648ms).
+2024-10-15 14:17:27.063  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59m57s968ms).
+2024-10-15 14:48:03.975  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m36s910ms).
+2024-10-15 19:23:00.167  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51m53s845ms).
+2024-10-15 19:34:01.390  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m1s228ms).
+2024-10-15 19:44:36.522  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m35s52ms).

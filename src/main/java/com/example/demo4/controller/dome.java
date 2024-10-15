@@ -78,9 +78,9 @@ public class dome {
             }
         }
     }
-    @PostMapping("/text")
+    @PostMapping("/ceshi")
     public void file(MultipartFile file) {
-
+        System.out.println("这是从容器中打印");
     }
 
     /***
