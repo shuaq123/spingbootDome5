@@ -67,7 +67,6 @@ public class dome {
      */
     @PostMapping("/sendVerification")
     public void sendVerification(String p) {
-
         var phone = new phone();
         var phoneValid = phone.isPhoneValid(p);
         if (phoneValid) {
@@ -79,8 +78,8 @@ public class dome {
         }
     }
     @PostMapping("/ceshi")
-    public void file(MultipartFile file) {
-        System.out.println("这是从容器中打印");
+    public String file(MultipartFile file) {
+        return "你是容器返回的数据";
     }
 
     /***
