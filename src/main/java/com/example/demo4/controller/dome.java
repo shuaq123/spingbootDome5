@@ -78,9 +78,9 @@ public class dome {
             }
         }
     }
-    @GetMapping("/ceshi")
+    @GetMapping("/test")
     public String file() {
-        return "演示访问到是容器中到项目";
+        return "Test spingboot hello";
     }
 
     /***
