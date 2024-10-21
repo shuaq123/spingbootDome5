@@ -1,16 +1,60 @@
-2024-10-15 01:15:55.356  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h21m27s212ms).
-2024-10-15 02:40:15.076  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h24m19s720ms).
-2024-10-15 04:01:42.409  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h21m27s333ms).
-2024-10-15 05:26:04.541  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h24m22s133ms).
-2024-10-15 06:32:02.836  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h5m58s295ms).
-2024-10-15 07:50:37.993  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h18m35s156ms).
-2024-10-15 09:15:08.957  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h24m30s964ms).
-2024-10-15 10:36:22.920  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h21m13s964ms).
-2024-10-15 12:01:21.997  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h24m59s75ms).
-2024-10-15 12:59:43.434  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58m21s438ms).
-2024-10-15 13:16:59.082  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m15s648ms).
-2024-10-15 14:17:27.063  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59m57s968ms).
-2024-10-15 14:48:03.975  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m36s910ms).
-2024-10-15 19:23:00.167  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51m53s845ms).
-2024-10-15 19:34:01.390  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m1s228ms).
-2024-10-15 19:44:36.522  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m35s52ms).
+2024-10-21 01:24:17.703  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h25m49s424ms).
+2024-10-21 02:47:13.506  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h22m55s803ms).
+2024-10-21 04:08:46.572  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h21m33s66ms).
+2024-10-21 05:30:04.497  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h21m17s923ms).
+2024-10-21 06:52:47.346  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h22m42s850ms).
+2024-10-21 08:14:38.168  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h21m50s822ms).
+2024-10-21 08:49:37.045  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=34m58s878ms).
+2024-10-21 09:24:00.041  WARN 77052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=33m52s991ms).
+2024-10-21 10:26:44.234  INFO 10558 --- [main] com.example.demo4.Demo4Application       : Starting Demo4Application using Java 17.0.6 on 00deMacBook-Pro.local with PID 10558 (/Users/a00/IdeaProjects/demo4/target/classes started by a00 in /Users/a00/IdeaProjects/demo4)
+2024-10-21 10:26:44.236  INFO 10558 --- [main] com.example.demo4.Demo4Application       : The following 1 profile is active: "test"
+2024-10-21 10:26:45.048  INFO 10558 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-10-21 10:26:45.050  INFO 10558 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-10-21 10:26:45.078  INFO 10558 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2024-10-21 10:26:45.614  INFO 10558 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8214 (http)
+2024-10-21 10:26:45.624  INFO 10558 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-21 10:26:45.624  INFO 10558 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-10-21 10:26:45.714  INFO 10558 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-21 10:26:45.715  INFO 10558 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1418 ms
+2024-10-21 10:26:46.303  WARN 10558 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.example.demo4.pojo.po.BgExerciseStore ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2024-10-21 10:26:46.871  WARN 10558 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8214 is already in use
+2024-10-21 10:26:46.882  INFO 10558 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-10-21 10:26:46.890  INFO 10558 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-10-21 10:26:46.898 ERROR 10558 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8214 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8214 or configure this application to listen on another port.
+
+2024-10-21 10:32:43.781  INFO 10717 --- [main] com.example.demo4.Demo4Application       : Starting Demo4Application using Java 17.0.6 on 00deMacBook-Pro.local with PID 10717 (/Users/a00/IdeaProjects/demo4/target/classes started by a00 in /Users/a00/IdeaProjects/demo4)
+2024-10-21 10:32:43.784  INFO 10717 --- [main] com.example.demo4.Demo4Application       : The following 1 profile is active: "test"
+2024-10-21 10:32:44.345  INFO 10717 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-10-21 10:32:44.346  INFO 10717 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-10-21 10:32:44.366  INFO 10717 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2024-10-21 10:32:44.694  INFO 10717 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8214 (http)
+2024-10-21 10:32:44.700  INFO 10717 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-21 10:32:44.700  INFO 10717 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-10-21 10:32:44.775  INFO 10717 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-21 10:32:44.775  INFO 10717 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 938 ms
+2024-10-21 10:32:45.194  WARN 10717 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.example.demo4.pojo.po.BgExerciseStore ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2024-10-21 10:32:45.816  INFO 10717 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8214 (http) with context path ''
+2024-10-21 10:32:45.824  INFO 10717 --- [main] com.example.demo4.Demo4Application       : Started Demo4Application in 2.604 seconds (JVM running for 3.562)
+2024-10-21 10:34:27.917  INFO 10717 --- [http-nio-0.0.0.0-8214-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-21 10:34:27.918  INFO 10717 --- [http-nio-0.0.0.0-8214-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-21 10:34:27.924  INFO 10717 --- [http-nio-0.0.0.0-8214-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2024-10-21 10:35:01.874  WARN 10717 --- [http-nio-0.0.0.0-8214-exec-8] c.b.m.c.t.support.ReflectLambdaMeta      : Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @659a969b
+2024-10-21 10:35:01.885  INFO 10717 --- [http-nio-0.0.0.0-8214-exec-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-21 10:35:01.889  WARN 10717 --- [http-nio-0.0.0.0-8214-exec-8] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-10-21 10:35:02.019  INFO 10717 --- [http-nio-0.0.0.0-8214-exec-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-21 13:05:32.735  WARN 10717 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h3m57s637ms).
+2024-10-21 13:36:32.230  WARN 10717 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m59s504ms).

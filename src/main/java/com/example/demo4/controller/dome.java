@@ -78,8 +78,8 @@ public class dome {
         }
     }
     @PostMapping("/ceshi")
-    public String file(MultipartFile file) {
-        return "2312343234234234";
+    public String file() {
+        return "演示访问到是容器中到项目";
     }
 
     /***
