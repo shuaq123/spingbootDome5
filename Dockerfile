@@ -7,7 +7,7 @@ FROM ubuntu:latest
 #       mv jdk-17.0.1_osx-amd64_bin jdk17 && \
 #       rm jdk-17.0.1_osx-amd64_bin.tar.gz
 # 将本地的 JDK 复制到镜像中
-#COPY ./jdk-17.0.1 /jdk-17.0.1
+COPY ./jdk-17.0.1 /jdk-17.0.1
 # 设置环境变量 JAVA_HOME
 ENV JAVA_HOME=/jdk-17.0.1
 ENV PATH=$PATH:$JAVA_HOME/bin
